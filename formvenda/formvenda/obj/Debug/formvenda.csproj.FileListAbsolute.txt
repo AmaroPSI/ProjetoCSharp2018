@@ -1,0 +1,9 @@
+C:\Users\formando\Desktop\formvenda\formvenda\bin\Debug\formvenda.exe.config
+C:\Users\formando\Desktop\formvenda\formvenda\bin\Debug\formvenda.exe
+C:\Users\formando\Desktop\formvenda\formvenda\bin\Debug\formvenda.pdb
+C:\Users\formando\Desktop\formvenda\formvenda\obj\Debug\formvenda.csprojResolveAssemblyReference.cache
+C:\Users\formando\Desktop\formvenda\formvenda\obj\Debug\formvenda.Form1.resources
+C:\Users\formando\Desktop\formvenda\formvenda\obj\Debug\formvenda.Properties.Resources.resources
+C:\Users\formando\Desktop\formvenda\formvenda\obj\Debug\formvenda.csproj.GenerateResource.Cache
+C:\Users\formando\Desktop\formvenda\formvenda\obj\Debug\formvenda.exe
+C:\Users\formando\Desktop\formvenda\formvenda\obj\Debug\formvenda.pdb
