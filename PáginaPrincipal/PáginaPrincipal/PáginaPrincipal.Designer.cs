@@ -39,7 +39,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(328, 193);
             this.pictureBox3.Name = "pictureBox3";
