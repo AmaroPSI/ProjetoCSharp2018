@@ -1,0 +1,9 @@
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\bin\Debug\Projeto csharp.exe.config
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\bin\Debug\Projeto csharp.exe
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\bin\Debug\Projeto csharp.pdb
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\obj\Debug\Projeto csharp.csprojResolveAssemblyReference.cache
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\obj\Debug\Projeto_csharp.Form1.resources
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\obj\Debug\Projeto_csharp.Properties.Resources.resources
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\obj\Debug\Projeto csharp.csproj.GenerateResource.Cache
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\obj\Debug\Projeto csharp.exe
+C:\Users\formando\Documents\Joel\Projeto csharp\Projeto csharp\obj\Debug\Projeto csharp.pdb
