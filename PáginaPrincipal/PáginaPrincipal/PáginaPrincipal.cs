@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoC;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,8 @@ namespace PáginaPrincipal
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            FormCliente interligar = new FormCliente();
+            interligar.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
