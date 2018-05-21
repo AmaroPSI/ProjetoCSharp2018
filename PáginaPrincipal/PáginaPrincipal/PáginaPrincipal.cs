@@ -1,4 +1,5 @@
-﻿using ProjetoC;
+﻿using Index;
+using ProjetoC;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,9 @@ namespace PáginaPrincipal
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+            FormCasa interligar = new FormCasa();
+            interligar.ShowDialog();
+           
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

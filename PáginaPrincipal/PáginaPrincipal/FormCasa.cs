@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Index
 {
-    public partial class TBNumero : Form
+    public partial class FormCasa : Form
     {
         private Casa casaadd;
-        public TBNumero()
+        public FormCasa()
         {
             InitializeComponent();
         }

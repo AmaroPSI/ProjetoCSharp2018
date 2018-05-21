@@ -1,6 +1,6 @@
 ﻿namespace Index
 {
-    partial class TBNumero
+    partial class FormCasa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TBNumero));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCasa));
             this.LabelDetalhes = new System.Windows.Forms.Label();
             this.LabelID = new System.Windows.Forms.Label();
             this.LabelLocalidade = new System.Windows.Forms.Label();
@@ -55,6 +55,9 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IDCasa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Localidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnApagar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,9 +78,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.IDCasa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Localidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -313,6 +313,21 @@
             this.dataGridView1.TabIndex = 32;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // IDCasa
+            // 
+            this.IDCasa.HeaderText = "IDCasa";
+            this.IDCasa.Name = "IDCasa";
+            // 
+            // Localidade
+            // 
+            this.Localidade.HeaderText = "Localidade";
+            this.Localidade.Name = "Localidade";
+            // 
+            // Rua
+            // 
+            this.Rua.HeaderText = "Rua";
+            this.Rua.Name = "Rua";
+            // 
             // BtnApagar
             // 
             this.BtnApagar.Location = new System.Drawing.Point(35, 581);
@@ -487,21 +502,6 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // IDCasa
-            // 
-            this.IDCasa.HeaderText = "IDCasa";
-            this.IDCasa.Name = "IDCasa";
-            // 
-            // Localidade
-            // 
-            this.Localidade.HeaderText = "Localidade";
-            this.Localidade.Name = "Localidade";
-            // 
-            // Rua
-            // 
-            this.Rua.HeaderText = "Rua";
-            this.Rua.Name = "Rua";
-            // 
             // tbid
             // 
             this.tbid.Location = new System.Drawing.Point(592, 110);
@@ -509,7 +509,7 @@
             this.tbid.Size = new System.Drawing.Size(100, 20);
             this.tbid.TabIndex = 53;
             // 
-            // TBNumero
+            // FormCasa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -561,7 +561,7 @@
             this.Controls.Add(this.LabelLocalidade);
             this.Controls.Add(this.LabelID);
             this.Controls.Add(this.LabelDetalhes);
-            this.Name = "TBNumero";
+            this.Name = "FormCasa";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.TBNumero_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

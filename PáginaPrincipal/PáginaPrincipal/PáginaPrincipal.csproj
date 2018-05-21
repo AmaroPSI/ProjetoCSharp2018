@@ -47,11 +47,11 @@
   <ItemGroup>
     <Compile Include="Casa.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="GerirCasa.cs">
+    <Compile Include="FormCasa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GerirCasa.designer.cs">
-      <DependentUpon>GerirCasa.cs</DependentUpon>
+    <Compile Include="FormCasa.designer.cs">
+      <DependentUpon>FormCasa.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCliente.cs">
       <SubType>Form</SubType>
@@ -72,8 +72,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GerirCasa.resx">
-      <DependentUpon>GerirCasa.cs</DependentUpon>
+    <EmbeddedResource Include="FormCasa.resx">
+      <DependentUpon>FormCasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
