@@ -45,18 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Casa.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="GerirCasa.cs">
+    <Compile Include="Casa\Casa.cs" />
+    <Compile Include="Cliente\Cliente.cs" />
+    <Compile Include="Casa\GerirCasa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GerirCasa.designer.cs">
+    <Compile Include="Casa\GerirCasa.designer.cs">
       <DependentUpon>GerirCasa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCliente.cs">
+    <Compile Include="Cliente\FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCliente.Designer.cs">
+    <Compile Include="Cliente\FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="PáginaPrincipal.cs">
@@ -67,10 +67,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GerirCasa.resx">
+    <EmbeddedResource Include="Casa\GerirCasa.resx">
       <DependentUpon>GerirCasa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCliente.resx">
+    <EmbeddedResource Include="Cliente\FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PáginaPrincipal.resx">
