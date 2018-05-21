@@ -1,0 +1,9 @@
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\bin\Debug\PáginaPrincipal.exe.config
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\bin\Debug\PáginaPrincipal.exe
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\bin\Debug\PáginaPrincipal.pdb
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\obj\Debug\PáginaPrincipal.csprojResolveAssemblyReference.cache
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\obj\Debug\PáginaPrincipal.Form1.resources
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\obj\Debug\PáginaPrincipal.Properties.Resources.resources
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\obj\Debug\PáginaPrincipal.csproj.GenerateResource.Cache
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\obj\Debug\PáginaPrincipal.exe
+c:\users\formando\documents\visual studio 2017\Projects\PáginaPrincipal\PáginaPrincipal\obj\Debug\PáginaPrincipal.pdb

@@ -1,0 +1,9 @@
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\bin\Debug\ProjetoFinalC.exe.config
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\bin\Debug\ProjetoFinalC.exe
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\bin\Debug\ProjetoFinalC.pdb
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\obj\Debug\ProjetoFinalC.csprojResolveAssemblyReference.cache
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\obj\Debug\ProjetoFinalC.Form1.resources
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\obj\Debug\ProjetoFinalC.Properties.Resources.resources
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\obj\Debug\ProjetoFinalC.csproj.GenerateResource.Cache
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\obj\Debug\ProjetoFinalC.exe
+C:\Users\formando\Desktop\ProjetoFinalC\ProjetoFinalC\obj\Debug\ProjetoFinalC.pdb

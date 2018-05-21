@@ -1,0 +1,18 @@
+C:\Users\formando\Desktop\Prof.helio\Index\Index\obj\Debug\Index.csprojResolveAssemblyReference.cache
+C:\Users\formando\Desktop\Prof.helio\Index\Index\obj\Debug\Index.TBNumero.resources
+C:\Users\formando\Desktop\Prof.helio\Index\Index\obj\Debug\Index.csproj.GenerateResource.Cache
+C:\Users\formando\Desktop\Prof.helio\Index\Index\bin\Debug\Index.exe.config
+C:\Users\formando\Desktop\Prof.helio\Index\Index\bin\Debug\Index.exe
+C:\Users\formando\Desktop\Prof.helio\Index\Index\bin\Debug\Index.pdb
+C:\Users\formando\Desktop\Prof.helio\Index\Index\obj\Debug\Index.Properties.Resources.resources
+C:\Users\formando\Desktop\Prof.helio\Index\Index\obj\Debug\Index.exe
+C:\Users\formando\Desktop\Prof.helio\Index\Index\obj\Debug\Index.pdb
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\bin\Debug\Index.exe.config
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\bin\Debug\Index.exe
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\bin\Debug\Index.pdb
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\obj\Debug\Index.csprojResolveAssemblyReference.cache
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\obj\Debug\Index.TBNumero.resources
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\obj\Debug\Index.Properties.Resources.resources
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\obj\Debug\Index.csproj.GenerateResource.Cache
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\obj\Debug\Index.exe
+C:\Users\formando\Desktop\Tudo AQUI\Prof.helio\Index\Index\obj\Debug\Index.pdb
