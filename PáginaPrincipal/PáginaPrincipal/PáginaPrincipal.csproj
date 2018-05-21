@@ -45,8 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrendamento.cs" />
     <Compile Include="Casa.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArrendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs" />
     <Compile Include="FormCasa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +66,15 @@
     </Compile>
     <Compile Include="FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLimpeza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLimpezas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVendas.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -77,6 +94,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLimpezas.resx">
+      <DependentUpon>FormLimpezas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVendas.resx">
+      <DependentUpon>FormVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PáginaPrincipal.resx">
       <DependentUpon>PáginaPrincipal.cs</DependentUpon>
