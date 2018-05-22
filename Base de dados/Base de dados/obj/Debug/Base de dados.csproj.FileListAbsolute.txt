@@ -1,0 +1,8 @@
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\bin\Debug\Base de dados.exe.config
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\bin\Debug\Base de dados.exe
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\bin\Debug\Base de dados.pdb
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\obj\Debug\Base de dados.csprojResolveAssemblyReference.cache
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\obj\Debug\Base_de_dados.Properties.Resources.resources
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\obj\Debug\Base de dados.csproj.GenerateResource.Cache
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\obj\Debug\Base de dados.exe
+C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\obj\Debug\Base de dados.pdb

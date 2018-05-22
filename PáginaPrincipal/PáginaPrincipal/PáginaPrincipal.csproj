@@ -46,6 +46,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrendamento.cs" />
+    <Compile Include="base de dados\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="base de dados\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="base de dados\Model1.Context.cs" />
+    <Compile Include="base de dados\Model1.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="base de dados\Model1.Designer.cs" />
+    <Compile Include="base de dados\Model11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="base de dados\Program.cs" />
     <Compile Include="Casa.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Form1.cs">
@@ -109,6 +128,13 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="base de dados\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model11.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="base de dados\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -123,6 +149,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="base de dados\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="base de dados\Model1.edmx.sql" />
     <Content Include="ImoDa\687474703a2f2f692e696d6775722e636f6d2f48656c687441782e706e67.ico" />
     <Content Include="ImoDa\687474703a2f2f692e696d6775722e636f6d2f48656c687441782e706e67.png" />
     <Content Include="ImoDa\Cash-icon.ico" />
@@ -137,6 +168,9 @@
     <Content Include="ImoDa\ImoDa.sln" />
     <Content Include="ImoDa\transferir.ico" />
     <Content Include="ImoDa\transferir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

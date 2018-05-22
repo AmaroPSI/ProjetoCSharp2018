@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\formando\Desktop\Base de dados\Base de dados\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\formando\Desktop\ProjetoCSharp2018\Base de dados\Base de dados\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

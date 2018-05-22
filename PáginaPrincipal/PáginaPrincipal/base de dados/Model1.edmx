@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="ArrendamentoSet" EntityType="Model1.Store.ArrendamentoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClienteSet" EntityType="Model1.Store.ClienteSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ServiçoSet" EntityType="Model1.Store.ServiçoSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LimpezaSet" EntityType="Model1.Store.LimpezaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VendaSet" EntityType="Model1.Store.VendaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CasaSet" EntityType="Model1.Store.CasaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CasaSet_CasaArrendavel" EntityType="Model1.Store.CasaSet_CasaArrendavel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CasaSet_CasaVendavel" EntityType="Model1.Store.CasaSet_CasaVendavel" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ClienteArrendamento" Association="Model1.Store.ClienteArrendamento">
+      <End Role="Cliente" EntitySet="ClienteSet" />
+      <End Role="Arrendamento" EntitySet="ArrendamentoSet" />
+    </AssociationSet>
+    <AssociationSet Name="ArrendamentoCasaArrendavel" Association="Model1.Store.ArrendamentoCasaArrendavel">
+      <End Role="Arrendamento" EntitySet="ArrendamentoSet" />
+      <End Role="CasaArrendavel" EntitySet="CasaSet_CasaArrendavel" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteCasa" Association="Model1.Store.ClienteCasa">
+      <End Role="Cliente" EntitySet="ClienteSet" />
+      <End Role="Casa" EntitySet="CasaSet" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteVenda" Association="Model1.Store.ClienteVenda">
+      <End Role="Cliente" EntitySet="ClienteSet" />
+      <End Role="Venda" EntitySet="VendaSet" />
+    </AssociationSet>
+    <AssociationSet Name="CasaLimpeza" Association="Model1.Store.CasaLimpeza">
+      <End Role="Casa" EntitySet="CasaSet" />
+      <End Role="Limpeza" EntitySet="LimpezaSet" />
+    </AssociationSet>
+    <AssociationSet Name="LimpezaServiço" Association="Model1.Store.LimpezaServiço">
+      <End Role="Limpeza" EntitySet="LimpezaSet" />
+      <End Role="Serviço" EntitySet="ServiçoSet" />
+    </AssociationSet>
+    <AssociationSet Name="VendaCasaVendavel" Association="Model1.Store.VendaCasaVendavel">
+      <End Role="Venda" EntitySet="VendaSet" />
+      <End Role="CasaVendavel" EntitySet="CasaSet_CasaVendavel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CasaArrendavel_inherits_Casa" Association="Model1.Store.FK_CasaArrendavel_inherits_Casa">
+      <End Role="Casa" EntitySet="CasaSet" />
+      <End Role="CasaArrendavel" EntitySet="CasaSet_CasaArrendavel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CasaVendavel_inherits_Casa" Association="Model1.Store.FK_CasaVendavel_inherits_Casa">
+      <End Role="Casa" EntitySet="CasaSet" />
+      <End Role="CasaVendavel" EntitySet="CasaSet_CasaVendavel" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ArrendamentoSet">
+    <Key>
+      <PropertyRef Name="idArrendamento" />
+    </Key>
+    <Property Name="idArrendamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InicioContrato" Type="datetime" Nullable="false" />
+    <Property Name="DuracaoMeses" Type="decimal" Nullable="false" />
+    <Property Name="Renovável" Type="bit" Nullable="false" />
+    <Property Name="Cliente_idCliente" Type="int" Nullable="false" />
+    <Property Name="CasaArrendavel_idCasa" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="ClienteSet">
+    <Key>
+      <PropertyRef Name="idCliente" />
+    </Key>
+    <Property Name="idCliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NIF" Type="int" Nullable="false" />
+    <Property Name="Morada" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Contacto" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ServiçoSet">
+    <Key>
+      <PropertyRef Name="idServiço" />
+    </Key>
+    <Property Name="idServiço" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descrição" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Valor" Type="decimal" Nullable="false" />
+    <Property Name="Unidades" Type="int" Nullable="false" />
+    <Property Name="Limpeza_idLimpeza" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="LimpezaSet">
+    <Key>
+      <PropertyRef Name="idLimpeza" />
+    </Key>
+    <Property Name="idLimpeza" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Data" Type="datetime" Nullable="false" />
+    <Property Name="Casa_idCasa" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="VendaSet">
+    <Key>
+      <PropertyRef Name="idVenda" />
+    </Key>
+    <Property Name="idVenda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataVenda" Type="datetime" Nullable="false" />
+    <Property Name="ValorNegociado" Type="decimal" Nullable="false" />
+    <Property Name="ComissaoNegocial" Type="decimal" Nullable="false" />
+    <Property Name="Cliente_idCliente" Type="int" Nullable="false" />
+    <Property Name="CasaVendavel_idCasa" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CasaSet">
+    <Key>
+      <PropertyRef Name="idCasa" />
+    </Key>
+    <Property Name="idCasa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Localidade" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Rua" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="Andar" Type="int" Nullable="false" />
+    <Property Name="Area" Type="decimal" Nullable="false" />
+    <Property Name="NumeroAssoalhada" Type="int" Nullable="false" />
+    <Property Name="NumeroWC" Type="int" Nullable="false" />
+    <Property Name="NumeroPisos" Type="int" Nullable="false" />
+    <Property Name="Tipo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cliente_idCliente" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CasaSet_CasaArrendavel">
+    <Key>
+      <PropertyRef Name="idCasa" />
+    </Key>
+    <Property Name="ValorBaseMes" Type="decimal" Nullable="false" />
+    <Property Name="Comissão" Type="decimal" Nullable="false" />
+    <Property Name="idCasa" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CasaSet_CasaVendavel">
+    <Key>
+      <PropertyRef Name="idCasa" />
+    </Key>
+    <Property Name="ValorBaseVenda" Type="decimal" Nullable="false" />
+    <Property Name="ValorComissao" Type="decimal" Nullable="false" />
+    <Property Name="idCasa" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteArrendamento">
+    <End Role="Cliente" Type="Model1.Store.ClienteSet" Multiplicity="1" />
+    <End Role="Arrendamento" Type="Model1.Store.ArrendamentoSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Arrendamento">
+        <PropertyRef Name="Cliente_idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArrendamentoCasaArrendavel">
+    <End Role="Arrendamento" Type="Model1.Store.ArrendamentoSet" Multiplicity="*" />
+    <End Role="CasaArrendavel" Type="Model1.Store.CasaSet_CasaArrendavel" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="CasaArrendavel">
+        <PropertyRef Name="idCasa" />
+      </Principal>
+      <Dependent Role="Arrendamento">
+        <PropertyRef Name="CasaArrendavel_idCasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClienteCasa">
+    <End Role="Cliente" Type="Model1.Store.ClienteSet" Multiplicity="1" />
+    <End Role="Casa" Type="Model1.Store.CasaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Casa">
+        <PropertyRef Name="Cliente_idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClienteVenda">
+    <End Role="Cliente" Type="Model1.Store.ClienteSet" Multiplicity="1" />
+    <End Role="Venda" Type="Model1.Store.VendaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="idCliente" />
+      </Principal>
+      <Dependent Role="Venda">
+        <PropertyRef Name="Cliente_idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CasaLimpeza">
+    <End Role="Casa" Type="Model1.Store.CasaSet" Multiplicity="0..1" />
+    <End Role="Limpeza" Type="Model1.Store.LimpezaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Casa">
+        <PropertyRef Name="idCasa" />
+      </Principal>
+      <Dependent Role="Limpeza">
+        <PropertyRef Name="Casa_idCasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LimpezaServiço">
+    <End Role="Limpeza" Type="Model1.Store.LimpezaSet" Multiplicity="0..1" />
+    <End Role="Serviço" Type="Model1.Store.ServiçoSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Limpeza">
+        <PropertyRef Name="idLimpeza" />
+      </Principal>
+      <Dependent Role="Serviço">
+        <PropertyRef Name="Limpeza_idLimpeza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VendaCasaVendavel">
+    <End Role="Venda" Type="Model1.Store.VendaSet" Multiplicity="*" />
+    <End Role="CasaVendavel" Type="Model1.Store.CasaSet_CasaVendavel" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="CasaVendavel">
+        <PropertyRef Name="idCasa" />
+      </Principal>
+      <Dependent Role="Venda">
+        <PropertyRef Name="CasaVendavel_idCasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CasaArrendavel_inherits_Casa">
+    <End Role="Casa" Type="Model1.Store.CasaSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CasaArrendavel" Type="Model1.Store.CasaSet_CasaArrendavel" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Casa">
+        <PropertyRef Name="idCasa" />
+      </Principal>
+      <Dependent Role="CasaArrendavel">
+        <PropertyRef Name="idCasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CasaVendavel_inherits_Casa">
+    <End Role="Casa" Type="Model1.Store.CasaSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CasaVendavel" Type="Model1.Store.CasaSet_CasaVendavel" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Casa">
+        <PropertyRef Name="idCasa" />
+      </Principal>
+      <Dependent Role="CasaVendavel">
+        <PropertyRef Name="idCasa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ArrendamentoSet" EntityType="Model1.Arrendamento" />
+          <EntitySet Name="ClienteSet" EntityType="Model1.Cliente" />
+          <EntitySet Name="ServiçoSet" EntityType="Model1.Serviço" />
+          <EntitySet Name="LimpezaSet" EntityType="Model1.Limpeza" />
+          <EntitySet Name="VendaSet" EntityType="Model1.Venda" />
+          <AssociationSet Name="ClienteArrendamento" Association="Model1.ClienteArrendamento">
+            <End Role="Cliente" EntitySet="ClienteSet" />
+            <End Role="Arrendamento" EntitySet="ArrendamentoSet" />
+          </AssociationSet>
+          <AssociationSet Name="ArrendamentoCasaArrendavel" Association="Model1.ArrendamentoCasaArrendavel">
+            <End Role="Arrendamento" EntitySet="ArrendamentoSet" />
+            <End Role="CasaArrendavel" EntitySet="CasaSet" />
+          </AssociationSet>
+          <EntitySet Name="CasaSet" EntityType="Model1.Casa" />
+          <AssociationSet Name="ClienteCasa" Association="Model1.ClienteCasa">
+            <End Role="Cliente" EntitySet="ClienteSet" />
+            <End Role="Casa" EntitySet="CasaSet" />
+          </AssociationSet>
+          <AssociationSet Name="ClienteVenda" Association="Model1.ClienteVenda">
+            <End Role="Cliente" EntitySet="ClienteSet" />
+            <End Role="Venda" EntitySet="VendaSet" />
+          </AssociationSet>
+          <AssociationSet Name="CasaLimpeza" Association="Model1.CasaLimpeza">
+            <End Role="Casa" EntitySet="CasaSet" />
+            <End Role="Limpeza" EntitySet="LimpezaSet" />
+          </AssociationSet>
+          <AssociationSet Name="LimpezaServiço" Association="Model1.LimpezaServiço">
+            <End Role="Limpeza" EntitySet="LimpezaSet" />
+            <End Role="Serviço" EntitySet="ServiçoSet" />
+          </AssociationSet>
+          <AssociationSet Name="VendaCasaVendavel" Association="Model1.VendaCasaVendavel">
+            <End Role="Venda" EntitySet="VendaSet" />
+            <End Role="CasaVendavel" EntitySet="CasaSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Arrendamento">
+          <Key>
+            <PropertyRef Name="idArrendamento" />
+          </Key>
+          <Property Name="idArrendamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InicioContrato" Type="DateTime" Nullable="false" />
+          <Property Name="DuracaoMeses" Type="Decimal" Nullable="false" />
+          <Property Name="Renovável" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Cliente" Relationship="Model1.ClienteArrendamento" FromRole="Arrendamento" ToRole="Cliente" />
+          <NavigationProperty Name="CasaArrendavel" Relationship="Model1.ArrendamentoCasaArrendavel" FromRole="Arrendamento" ToRole="CasaArrendavel" />
+        </EntityType>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="idCliente" />
+          </Key>
+          <Property Name="idCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" Nullable="false" />
+          <Property Name="NIF" Type="Int32" Nullable="false" />
+          <Property Name="Morada" Type="String" Nullable="false" />
+          <Property Name="Contacto" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Arrendamento" Relationship="Model1.ClienteArrendamento" FromRole="Cliente" ToRole="Arrendamento" />
+          <NavigationProperty Name="Casa" Relationship="Model1.ClienteCasa" FromRole="Cliente" ToRole="Casa" />
+          <NavigationProperty Name="Venda" Relationship="Model1.ClienteVenda" FromRole="Cliente" ToRole="Venda" />
+        </EntityType>
+        <EntityType Name="Serviço">
+          <Key>
+            <PropertyRef Name="idServiço" />
+          </Key>
+          <Property Name="idServiço" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Limpeza" Relationship="Model1.LimpezaServiço" FromRole="Serviço" ToRole="Limpeza" />
+          <Property Name="Descrição" Type="String" Nullable="false" />
+          <Property Name="Valor" Type="Decimal" Nullable="false" />
+          <Property Name="Unidades" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Limpeza">
+          <Key>
+            <PropertyRef Name="idLimpeza" />
+          </Key>
+          <Property Name="idLimpeza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Data" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="Casa" Relationship="Model1.CasaLimpeza" FromRole="Limpeza" ToRole="Casa" />
+          <NavigationProperty Name="Serviço" Relationship="Model1.LimpezaServiço" FromRole="Limpeza" ToRole="Serviço" />
+        </EntityType>
+        <EntityType Name="Casa">
+          <Key>
+            <PropertyRef Name="idCasa" />
+          </Key>
+          <Property Name="idCasa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Cliente" Relationship="Model1.ClienteCasa" FromRole="Casa" ToRole="Cliente" />
+          <NavigationProperty Name="Limpeza" Relationship="Model1.CasaLimpeza" FromRole="Casa" ToRole="Limpeza" />
+          <Property Name="Localidade" Type="String" Nullable="false" />
+          <Property Name="Rua" Type="String" Nullable="false" />
+          <Property Name="Numero" Type="Int32" Nullable="false" />
+          <Property Name="Andar" Type="Int32" Nullable="false" />
+          <Property Name="Area" Type="Decimal" Nullable="false" />
+          <Property Name="NumeroAssoalhada" Type="Int32" Nullable="false" />
+          <Property Name="NumeroWC" Type="Int32" Nullable="false" />
+          <Property Name="NumeroPisos" Type="Int32" Nullable="false" />
+          <Property Name="Tipo" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Venda">
+          <Key>
+            <PropertyRef Name="idVenda" />
+          </Key>
+          <Property Name="idVenda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Cliente" Relationship="Model1.ClienteVenda" FromRole="Venda" ToRole="Cliente" />
+          <NavigationProperty Name="CasaVendavel" Relationship="Model1.VendaCasaVendavel" FromRole="Venda" ToRole="CasaVendavel" />
+          <Property Name="DataVenda" Type="DateTime" Nullable="false" />
+          <Property Name="ValorNegociado" Type="Decimal" Nullable="false" />
+          <Property Name="ComissaoNegocial" Type="Decimal" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CasaArrendavel" BaseType="Model1.Casa" >
+          <NavigationProperty Name="Arrendamento" Relationship="Model1.ArrendamentoCasaArrendavel" FromRole="CasaArrendavel" ToRole="Arrendamento" />
+          <Property Name="ValorBaseMes" Type="Decimal" Nullable="false" />
+          <Property Name="Comissão" Type="Decimal" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CasaVendavel" BaseType="Model1.Casa" >
+          <NavigationProperty Name="Venda" Relationship="Model1.VendaCasaVendavel" FromRole="CasaVendavel" ToRole="Venda" />
+          <Property Name="ValorBaseVenda" Type="Decimal" Nullable="false" />
+          <Property Name="ValorComissao" Type="Decimal" Nullable="false" />
+        </EntityType>
+        <Association Name="ClienteArrendamento">
+          <End Type="Model1.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="Model1.Arrendamento" Role="Arrendamento" Multiplicity="*" />
+        </Association>
+        <Association Name="ArrendamentoCasaArrendavel">
+          <End Type="Model1.Arrendamento" Role="Arrendamento" Multiplicity="*" />
+          <End Type="Model1.CasaArrendavel" Role="CasaArrendavel" Multiplicity="0..1" />
+        </Association>
+        <Association Name="ClienteCasa">
+          <End Type="Model1.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="Model1.Casa" Role="Casa" Multiplicity="*" />
+        </Association>
+        <Association Name="ClienteVenda">
+          <End Type="Model1.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="Model1.Venda" Role="Venda" Multiplicity="*" />
+        </Association>
+        <Association Name="CasaLimpeza">
+          <End Type="Model1.Casa" Role="Casa" Multiplicity="0..1" />
+          <End Type="Model1.Limpeza" Role="Limpeza" Multiplicity="*" />
+        </Association>
+        <Association Name="LimpezaServiço">
+          <End Type="Model1.Limpeza" Role="Limpeza" Multiplicity="0..1" />
+          <End Type="Model1.Serviço" Role="Serviço" Multiplicity="*" />
+        </Association>
+        <Association Name="VendaCasaVendavel">
+          <End Type="Model1.Venda" Role="Venda" Multiplicity="0..1" />
+          <End Type="Model1.CasaVendavel" Role="CasaVendavel" Multiplicity="1" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="ArrendamentoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Arrendamento)">
+        <MappingFragment StoreEntitySet="ArrendamentoSet">
+          <ScalarProperty Name="idArrendamento" ColumnName="idArrendamento" />
+          <ScalarProperty Name="InicioContrato" ColumnName="InicioContrato" />
+          <ScalarProperty Name="DuracaoMeses" ColumnName="DuracaoMeses" />
+          <ScalarProperty Name="Renovável" ColumnName="Renovável" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClienteSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Cliente)">
+        <MappingFragment StoreEntitySet="ClienteSet">
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="NIF" ColumnName="NIF" />
+          <ScalarProperty Name="Morada" ColumnName="Morada" />
+          <ScalarProperty Name="Contacto" ColumnName="Contacto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiçoSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Serviço)">
+        <MappingFragment StoreEntitySet="ServiçoSet">
+          <ScalarProperty Name="idServiço" ColumnName="idServiço" />
+          <ScalarProperty Name="Descrição" ColumnName="Descrição" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LimpezaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Limpeza)">
+        <MappingFragment StoreEntitySet="LimpezaSet">
+          <ScalarProperty Name="idLimpeza" ColumnName="idLimpeza" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VendaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Venda)">
+        <MappingFragment StoreEntitySet="VendaSet">
+          <ScalarProperty Name="idVenda" ColumnName="idVenda" />
+          <ScalarProperty Name="DataVenda" ColumnName="DataVenda" />
+          <ScalarProperty Name="ValorNegociado" ColumnName="ValorNegociado" />
+          <ScalarProperty Name="ComissaoNegocial" ColumnName="ComissaoNegocial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CasaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Casa)">
+        <MappingFragment StoreEntitySet="CasaSet">
+          <ScalarProperty Name="idCasa" ColumnName="idCasa" />
+          <ScalarProperty Name="Localidade" ColumnName="Localidade" />
+          <ScalarProperty Name="Rua" ColumnName="Rua" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Andar" ColumnName="Andar" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="NumeroAssoalhada" ColumnName="NumeroAssoalhada" />
+          <ScalarProperty Name="NumeroWC" ColumnName="NumeroWC" />
+          <ScalarProperty Name="NumeroPisos" ColumnName="NumeroPisos" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.CasaArrendavel)">
+        <MappingFragment StoreEntitySet="CasaSet_CasaArrendavel">
+          <ScalarProperty Name="idCasa" ColumnName="idCasa" />
+          <ScalarProperty Name="ValorBaseMes" ColumnName="ValorBaseMes" />
+          <ScalarProperty Name="Comissão" ColumnName="Comissão" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.CasaVendavel)">
+        <MappingFragment StoreEntitySet="CasaSet_CasaVendavel">
+          <ScalarProperty Name="idCasa" ColumnName="idCasa" />
+          <ScalarProperty Name="ValorBaseVenda" ColumnName="ValorBaseVenda" />
+          <ScalarProperty Name="ValorComissao" ColumnName="ValorComissao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ClienteArrendamento" TypeName="Model1.ClienteArrendamento" StoreEntitySet="ArrendamentoSet">
+      <EndProperty Name="Cliente">
+        <ScalarProperty Name="idCliente" ColumnName="Cliente_idCliente" />
+      </EndProperty>
+      <EndProperty Name="Arrendamento">
+        <ScalarProperty Name="idArrendamento" ColumnName="idArrendamento" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ArrendamentoCasaArrendavel" TypeName="Model1.ArrendamentoCasaArrendavel" StoreEntitySet="ArrendamentoSet">
+      <EndProperty Name="CasaArrendavel">
+        <ScalarProperty Name="idCasa" ColumnName="CasaArrendavel_idCasa" />
+      </EndProperty>
+      <EndProperty Name="Arrendamento">
+        <ScalarProperty Name="idArrendamento" ColumnName="idArrendamento" />
+      </EndProperty>
+      <Condition ColumnName="CasaArrendavel_idCasa" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ClienteCasa" TypeName="Model1.ClienteCasa" StoreEntitySet="CasaSet">
+      <EndProperty Name="Cliente">
+        <ScalarProperty Name="idCliente" ColumnName="Cliente_idCliente" />
+      </EndProperty>
+      <EndProperty Name="Casa">
+        <ScalarProperty Name="idCasa" ColumnName="idCasa" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ClienteVenda" TypeName="Model1.ClienteVenda" StoreEntitySet="VendaSet">
+      <EndProperty Name="Cliente">
+        <ScalarProperty Name="idCliente" ColumnName="Cliente_idCliente" />
+      </EndProperty>
+      <EndProperty Name="Venda">
+        <ScalarProperty Name="idVenda" ColumnName="idVenda" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CasaLimpeza" TypeName="Model1.CasaLimpeza" StoreEntitySet="LimpezaSet">
+      <EndProperty Name="Casa">
+        <ScalarProperty Name="idCasa" ColumnName="Casa_idCasa" />
+      </EndProperty>
+      <EndProperty Name="Limpeza">
+        <ScalarProperty Name="idLimpeza" ColumnName="idLimpeza" />
+      </EndProperty>
+      <Condition ColumnName="Casa_idCasa" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="LimpezaServiço" TypeName="Model1.LimpezaServiço" StoreEntitySet="ServiçoSet">
+      <EndProperty Name="Limpeza">
+        <ScalarProperty Name="idLimpeza" ColumnName="Limpeza_idLimpeza" />
+      </EndProperty>
+      <EndProperty Name="Serviço">
+        <ScalarProperty Name="idServiço" ColumnName="idServiço" />
+      </EndProperty>
+      <Condition ColumnName="Limpeza_idLimpeza" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VendaCasaVendavel" TypeName="Model1.VendaCasaVendavel" StoreEntitySet="VendaSet">
+      <EndProperty Name="CasaVendavel">
+        <ScalarProperty Name="idCasa" ColumnName="CasaVendavel_idCasa" />
+      </EndProperty>
+      <EndProperty Name="Venda">
+        <ScalarProperty Name="idVenda" ColumnName="idVenda" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
