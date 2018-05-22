@@ -41,12 +41,12 @@
             this.LabelPisos = new System.Windows.Forms.Label();
             this.LabelTipo = new System.Windows.Forms.Label();
             this.LabelProprietario = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tblocalidade = new System.Windows.Forms.TextBox();
             this.CheckBoxVendável = new System.Windows.Forms.CheckBox();
             this.CheckBoxArrendável = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbrua = new System.Windows.Forms.TextBox();
+            this.tbnumero = new System.Windows.Forms.TextBox();
+            this.tbandar = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
@@ -196,12 +196,12 @@
             this.LabelProprietario.Text = "Proprietário:";
             this.LabelProprietario.Click += new System.EventHandler(this.LabelProprietario_Click);
             // 
-            // textBox1
+            // tblocalidade
             // 
-            this.textBox1.Location = new System.Drawing.Point(592, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 20);
-            this.textBox1.TabIndex = 12;
+            this.tblocalidade.Location = new System.Drawing.Point(592, 134);
+            this.tblocalidade.Name = "tblocalidade";
+            this.tblocalidade.Size = new System.Drawing.Size(254, 20);
+            this.tblocalidade.TabIndex = 12;
             // 
             // CheckBoxVendável
             // 
@@ -225,26 +225,26 @@
             this.CheckBoxArrendável.UseVisualStyleBackColor = true;
             this.CheckBoxArrendável.CheckedChanged += new System.EventHandler(this.CheckBoxArrendável_CheckedChanged);
             // 
-            // textBox2
+            // tbrua
             // 
-            this.textBox2.Location = new System.Drawing.Point(592, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(254, 20);
-            this.textBox2.TabIndex = 17;
+            this.tbrua.Location = new System.Drawing.Point(592, 157);
+            this.tbrua.Name = "tbrua";
+            this.tbrua.Size = new System.Drawing.Size(254, 20);
+            this.tbrua.TabIndex = 17;
             // 
-            // textBox4
+            // tbnumero
             // 
-            this.textBox4.Location = new System.Drawing.Point(592, 184);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(254, 20);
-            this.textBox4.TabIndex = 19;
+            this.tbnumero.Location = new System.Drawing.Point(592, 184);
+            this.tbnumero.Name = "tbnumero";
+            this.tbnumero.Size = new System.Drawing.Size(254, 20);
+            this.tbnumero.TabIndex = 19;
             // 
-            // textBox5
+            // tbandar
             // 
-            this.textBox5.Location = new System.Drawing.Point(592, 209);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(254, 20);
-            this.textBox5.TabIndex = 20;
+            this.tbandar.Location = new System.Drawing.Point(592, 209);
+            this.tbandar.Name = "tbandar";
+            this.tbandar.Size = new System.Drawing.Size(254, 20);
+            this.tbandar.TabIndex = 20;
             // 
             // numericUpDown1
             // 
@@ -463,6 +463,7 @@
             this.button1.TabIndex = 48;
             this.button1.Text = "Nova";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -543,12 +544,12 @@
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbandar);
+            this.Controls.Add(this.tbnumero);
+            this.Controls.Add(this.tbrua);
             this.Controls.Add(this.CheckBoxArrendável);
             this.Controls.Add(this.CheckBoxVendável);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tblocalidade);
             this.Controls.Add(this.LabelProprietario);
             this.Controls.Add(this.LabelTipo);
             this.Controls.Add(this.LabelPisos);
@@ -589,12 +590,12 @@
         private System.Windows.Forms.Label LabelPisos;
         private System.Windows.Forms.Label LabelTipo;
         private System.Windows.Forms.Label LabelProprietario;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tblocalidade;
         private System.Windows.Forms.CheckBox CheckBoxVendável;
         private System.Windows.Forms.CheckBox CheckBoxArrendável;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbrua;
+        private System.Windows.Forms.TextBox tbnumero;
+        private System.Windows.Forms.TextBox tbandar;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown3;

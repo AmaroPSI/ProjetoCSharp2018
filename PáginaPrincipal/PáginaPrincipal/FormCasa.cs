@@ -88,12 +88,24 @@ namespace Index
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.dataGridView1.Rows.Add(tbid.Text, textBox1.Text, textBox2.Text);
+            this.dataGridView1.Rows.Add(tbid.Text, tblocalidade.Text, tbrua.Text);
         }
 
         private void TBNumero_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Enabled = true;
+            label2.Enabled = true;
+            label3.Enabled = true;
+            label4.Enabled = true;
+            tbid.Enabled = true;
+            tblocalidade.Enabled = true;
+            tbrua.Enabled = true;
+            tbnumero.Enabled = true;
         }
     }
 }

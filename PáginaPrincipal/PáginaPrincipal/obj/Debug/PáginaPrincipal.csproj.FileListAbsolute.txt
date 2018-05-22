@@ -18,3 +18,5 @@ C:\Users\formando\Desktop\ProjetoCSharp2018\PáginaPrincipal\PáginaPrincipal\bi
 C:\Users\formando\Desktop\ProjetoCSharp2018\PáginaPrincipal\PáginaPrincipal\bin\Debug\PáginaPrincipal.pdb
 C:\Users\formando\Desktop\ProjetoCSharp2018\PáginaPrincipal\PáginaPrincipal\obj\Debug\PáginaPrincipal.Properties.Resources.resources
 C:\Users\formando\Desktop\ProjetoCSharp2018\PáginaPrincipal\PáginaPrincipal\obj\Debug\Index.FormCasa.resources
+C:\Users\formando\Desktop\ProjetoCSharp2018\PáginaPrincipal\PáginaPrincipal\obj\Debug\formlimpeza.Form1.resources
+C:\Users\formando\Desktop\ProjetoCSharp2018\PáginaPrincipal\PáginaPrincipal\obj\Debug\formvenda.Form1.resources
