@@ -29,7 +29,25 @@ namespace PáginaPrincipal.base_de_dados
         public virtual DbSet<Cliente> ClienteSet { get; set; }
         public virtual DbSet<Serviço> ServiçoSet { get; set; }
         public virtual DbSet<Limpeza> LimpezaSet { get; set; }
-        public virtual DbSet<Venda> VendaSet { get; set; }
-        public virtual DbSet<Casa> CasaSet { get; set; }
+
+        public virtual DbSet<Venda> GetVendaSet()
+        {
+            return vendaSet;
+        }
+
+        public virtual void SetVendaSet(DbSet<Venda> value)
+        {
+            vendaSet = value;
+        }
+
+        public virtual DbSet<Casa> GetCasaSet()
+        {
+            return casaSet;
+        }
+
+        public virtual void SetCasaSet(DbSet<Casa> value)
+        {
+            casaSet = value;
+        }
     }
 }

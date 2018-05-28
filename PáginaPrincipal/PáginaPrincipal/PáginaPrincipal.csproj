@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrendamento.cs" />
+    <Compile Include="base de dados\DbContext.cs" />
     <Compile Include="base de dados\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
