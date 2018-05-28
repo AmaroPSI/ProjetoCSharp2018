@@ -1,0 +1,11 @@
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\bin\Debug\formarrendamentos.exe.config
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\bin\Debug\formarrendamentos.exe
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\bin\Debug\formarrendamentos.pdb
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\bin\Debug\formarrendamentos.xml
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\obj\Debug\formarrendamentos.vbprojResolveAssemblyReference.cache
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\obj\Debug\formarrendamentos.Form1.resources
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\obj\Debug\formarrendamentos.Resources.resources
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\obj\Debug\formarrendamentos.vbproj.GenerateResource.Cache
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\obj\Debug\formarrendamentos.exe
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\obj\Debug\formarrendamentos.xml
+C:\Users\formando\Documents\Joel\formarrendamentos\formarrendamentos\obj\Debug\formarrendamentos.pdb
