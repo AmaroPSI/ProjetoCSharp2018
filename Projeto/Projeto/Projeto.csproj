@@ -45,9 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arrendamento.cs" />
-    <Compile Include="Casa.cs" />
-    <Compile Include="Cliente.cs" />
     <Compile Include="FormArrendamentos.cs">
       <SubType>Form</SubType>
     </Compile>

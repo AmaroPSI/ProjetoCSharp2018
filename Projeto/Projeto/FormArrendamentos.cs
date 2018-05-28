@@ -209,7 +209,6 @@ namespace arren
             this.Controls.Add(this.btnremover);
             this.Controls.Add(this.listBox1);
             this.Name = "FormArrendamentos";
-            this.Text = "FormArrendamentos";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
