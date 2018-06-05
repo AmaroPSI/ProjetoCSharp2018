@@ -1,0 +1,13 @@
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\bin\Debug\Projeto.exe.config
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\bin\Debug\Projeto.exe
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\bin\Debug\Projeto.pdb
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.csprojResolveAssemblyReference.cache
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\arren.FormArrendamentos.resources
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Index.FormCasa.resources
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\ProjetoC.FormCliente.resources
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\FormVendas.FormVendas.resources
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Index.resources
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Properties.Resources.resources
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.Cache
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.exe
+C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.pdb

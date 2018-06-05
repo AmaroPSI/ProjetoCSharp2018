@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4C93E05-D26F-462A-AFF4-DBF5C3A1031E}</ProjectGuid>
+    <ProjectGuid>{7DB83869-B9A8-4A0A-B8F1-2C612D986B9F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Projeto</RootNamespace>
-    <AssemblyName>Projeto</AssemblyName>
+    <RootNamespace>FormVendas</RootNamespace>
+    <AssemblyName>FormVendas</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,52 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arrendamento.cs" />
-    <Compile Include="Casa.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="FormArrendamentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCasa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCasa.designer.cs">
-      <DependentUpon>FormCasa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCliente.designer.cs">
-      <DependentUpon>FormCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormVendas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormVendas.Designer.cs">
       <DependentUpon>FormVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Index.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Index.Designer.cs">
-      <DependentUpon>Index.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormArrendamentos.resx">
-      <DependentUpon>FormArrendamentos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCasa.resx">
-      <DependentUpon>FormCasa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCliente.resx">
-      <DependentUpon>FormCliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormVendas.resx">
       <DependentUpon>FormVendas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Index.resx">
-      <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,7 +64,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,29 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="img\687474703a2f2f692e696d6775722e636f6d2f48656c687441782e706e67.ico" />
-    <Content Include="img\687474703a2f2f692e696d6775722e636f6d2f48656c687441782e706e67.png" />
-    <Content Include="img\Cash-icon.ico" />
-    <Content Include="img\Cash-icon.png" />
-    <Content Include="img\family-in--house-icon-70516.ico" />
-    <Content Include="img\family-in--house-icon-70516.png" />
-    <Content Include="img\grab-vector-graphic-person-icon--imagebasket-13.ico" />
-    <Content Include="img\grab-vector-graphic-person-icon--imagebasket-13.png" />
-    <Content Include="img\house-icon.ico" />
-    <Content Include="img\house-icon.png" />
-    <Content Include="img\Icons-Land-Vista-People-Person-Male-Light.ico" />
-    <Content Include="img\ImoDa.sln" />
-    <Content Include="img\transferir.ico" />
-    <Content Include="img\transferir.png" />
-    <None Include="Resources\family-in--house-icon-70516.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="packages\EntityFramework.6.2.0\content\net40\" />
-    <Folder Include="packages\EntityFramework.6.2.0\lib\net40\" />
-    <Folder Include="packages\EntityFramework.6.2.0\lib\net45\" />
-    <Folder Include="packages\EntityFramework.6.2.0\tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
