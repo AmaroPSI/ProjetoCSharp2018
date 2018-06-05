@@ -87,7 +87,12 @@
     <Compile Include="FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLimpezas.cs" />
+    <Compile Include="FormLimpeza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLimpezas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormVendas.cs">
       <SubType>Form</SubType>
     </Compile>
