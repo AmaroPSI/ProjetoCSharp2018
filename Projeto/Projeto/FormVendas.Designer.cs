@@ -1,4 +1,4 @@
-﻿namespace FormVendas
+﻿namespace FormVenda
 {
     partial class FormVendas
     {

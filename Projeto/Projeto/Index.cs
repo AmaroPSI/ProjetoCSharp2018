@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Index;
+using ProjetoC;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,5 +19,16 @@ namespace Projeto
             InitializeComponent();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FormCasa interligar = new FormCasa();
+            interligar.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormCliente interligar = new FormCliente();
+            interligar.ShowDialog();
+        }
     }
 }

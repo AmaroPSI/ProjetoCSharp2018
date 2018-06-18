@@ -1,4 +1,6 @@
-﻿using System;
+﻿using arren;
+using FormVenda;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -73,7 +75,8 @@ namespace Index
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FormArrendamentos interligar = new FormArrendamentos();
+            interligar.ShowDialog();
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -106,6 +109,12 @@ namespace Index
             tblocalidade.Enabled = true;
             tbrua.Enabled = true;
             tbnumero.Enabled = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormVendas interligar = new FormVendas();
+            interligar.ShowDialog();
         }
     }
 }
