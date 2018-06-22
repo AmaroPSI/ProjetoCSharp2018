@@ -55,9 +55,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.IDCasa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Localidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnApagar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -303,30 +300,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDCasa,
-            this.Localidade,
-            this.Rua});
             this.dataGridView1.Location = new System.Drawing.Point(83, 84);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(341, 498);
             this.dataGridView1.TabIndex = 32;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // IDCasa
-            // 
-            this.IDCasa.HeaderText = "IDCasa";
-            this.IDCasa.Name = "IDCasa";
-            // 
-            // Localidade
-            // 
-            this.Localidade.HeaderText = "Localidade";
-            this.Localidade.Name = "Localidade";
-            // 
-            // Rua
-            // 
-            this.Rua.HeaderText = "Rua";
-            this.Rua.Name = "Rua";
             // 
             // BtnApagar
             // 
@@ -336,6 +314,7 @@
             this.BtnApagar.TabIndex = 33;
             this.BtnApagar.Text = "Apagar";
             this.BtnApagar.UseVisualStyleBackColor = true;
+            this.BtnApagar.Click += new System.EventHandler(this.BtnApagar_Click);
             // 
             // label1
             // 
@@ -626,9 +605,6 @@
         private System.Windows.Forms.Button btn_arrendamento;
         private System.Windows.Forms.Button btn_gerirlimpezas;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDCasa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Localidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Rua;
         private System.Windows.Forms.TextBox tbid;
     }
 }

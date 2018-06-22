@@ -27,3 +27,14 @@ C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.
 C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.exe
 C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.pdb
 C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Base_de_dados.Base_de_dados.Properties.Resources.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.csprojAssemblyReference.cache
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\arren.FormArrendamentos.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Index.FormCasa.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\ProjetoC.FormCliente.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.FormLimpeza.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\FormVenda.FormVendas.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Index.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Properties.Resources.resources
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.exe
+C:\Users\pedroneves\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.pdb

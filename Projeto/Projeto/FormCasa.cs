@@ -19,6 +19,10 @@ namespace Index
         public FormCasa()
         {
             InitializeComponent();
+            dataGridView1.ColumnCount = 3;
+            dataGridView1.Columns[0].Name = "IDCasa";
+            dataGridView1.Columns[1].Name = "Localidade";
+            dataGridView1.Columns[2].Name = "Rua";
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -93,8 +97,13 @@ namespace Index
         private void button5_Click(object sender, EventArgs e)
         {
             this.dataGridView1.Rows.Add(tbid.Text, tblocalidade.Text, tbrua.Text);
+            addData(tbid.Text, tblocalidade.Text, tbrua.Text);
         }
-
+        private void addData(string id, string localidade, string rua)
+        {
+            String[] row = { id, localidade, rua };
+            dataGridView1.Rows.Add(row);
+        }
         private void TBNumero_Load(object sender, EventArgs e)
         {
 
@@ -122,6 +131,11 @@ namespace Index
         {
             FormLimpeza interligar = new FormLimpeza();
             interligar.ShowDialog();
+        }
+
+        private void BtnApagar_Click(object sender, EventArgs e)
+        {
+            this.dataGridView1.Rows.Remove(this.dataGridView1.CurrentRow);
         }
     }
 }

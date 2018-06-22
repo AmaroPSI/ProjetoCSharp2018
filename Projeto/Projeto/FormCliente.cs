@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ProjetoC
 {
     public partial class FormCliente : Form
     {
-
         BindingSource bs = new BindingSource();
         private Cliente cliente;
         public FormCliente()
