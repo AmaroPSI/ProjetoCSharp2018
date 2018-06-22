@@ -74,9 +74,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_venda = new System.Windows.Forms.Button();
+            this.btn_arrendamento = new System.Windows.Forms.Button();
+            this.btn_gerirlimpezas = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.tbid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -465,34 +465,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_venda
             // 
-            this.button2.Location = new System.Drawing.Point(715, 496);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 26);
-            this.button2.TabIndex = 49;
-            this.button2.Text = "Ver";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_venda.Location = new System.Drawing.Point(715, 496);
+            this.btn_venda.Name = "btn_venda";
+            this.btn_venda.Size = new System.Drawing.Size(131, 26);
+            this.btn_venda.TabIndex = 49;
+            this.btn_venda.Text = "Ver";
+            this.btn_venda.UseVisualStyleBackColor = true;
+            this.btn_venda.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btn_arrendamento
             // 
-            this.button3.Location = new System.Drawing.Point(535, 499);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 23);
-            this.button3.TabIndex = 50;
-            this.button3.Text = "Ver/Criar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_arrendamento.Location = new System.Drawing.Point(535, 499);
+            this.btn_arrendamento.Name = "btn_arrendamento";
+            this.btn_arrendamento.Size = new System.Drawing.Size(134, 23);
+            this.btn_arrendamento.TabIndex = 50;
+            this.btn_arrendamento.Text = "Ver/Criar";
+            this.btn_arrendamento.UseVisualStyleBackColor = true;
+            this.btn_arrendamento.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btn_gerirlimpezas
             // 
-            this.button4.Location = new System.Drawing.Point(535, 537);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(311, 23);
-            this.button4.TabIndex = 51;
-            this.button4.Text = "Gerir Limpezas";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_gerirlimpezas.Location = new System.Drawing.Point(535, 537);
+            this.btn_gerirlimpezas.Name = "btn_gerirlimpezas";
+            this.btn_gerirlimpezas.Size = new System.Drawing.Size(311, 23);
+            this.btn_gerirlimpezas.TabIndex = 51;
+            this.btn_gerirlimpezas.Text = "Gerir Limpezas";
+            this.btn_gerirlimpezas.UseVisualStyleBackColor = true;
+            this.btn_gerirlimpezas.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -518,9 +519,9 @@
             this.ClientSize = new System.Drawing.Size(902, 640);
             this.Controls.Add(this.tbid);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_gerirlimpezas);
+            this.Controls.Add(this.btn_arrendamento);
+            this.Controls.Add(this.btn_venda);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -621,9 +622,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_venda;
+        private System.Windows.Forms.Button btn_arrendamento;
+        private System.Windows.Forms.Button btn_gerirlimpezas;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDCasa;
         private System.Windows.Forms.DataGridViewTextBoxColumn Localidade;

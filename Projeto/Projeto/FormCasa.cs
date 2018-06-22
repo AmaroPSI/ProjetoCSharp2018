@@ -1,5 +1,6 @@
 ﻿using arren;
 using FormVenda;
+using Projeto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,7 +55,7 @@ namespace Index
             label9.Enabled = false;
             label10.Enabled = false;
             textBox8.Enabled = false;
-            button2.Enabled = false;
+            btn_venda.Enabled = false;
             CheckBoxVendável.Enabled = false;
             CheckBoxArrendável.Enabled = false;
         }
@@ -68,7 +69,7 @@ namespace Index
             label7.Enabled = false;
             label8.Enabled = false;
             textBox7.Enabled = false;
-            button3.Enabled = false;
+            btn_arrendamento.Enabled = false;
             CheckBoxVendável.Enabled = false;
             CheckBoxArrendável.Enabled = false;
         }
@@ -114,6 +115,12 @@ namespace Index
         private void button2_Click(object sender, EventArgs e)
         {
             FormVendas interligar = new FormVendas();
+            interligar.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormLimpezas interligar = new FormLimpezas();
             interligar.ShowDialog();
         }
     }
