@@ -11,3 +11,19 @@ C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp201
 C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.exe
 C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.pdb
 C:\Users\formando\Desktop\Amaro\Desenvolvimento de aplicações\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\FormVenda.FormVendas.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\bin\Debug\Projeto.exe.config
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\bin\Debug\Projeto.exe
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\bin\Debug\Projeto.pdb
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.csprojAssemblyReference.cache
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\arren.FormArrendamentos.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Index.FormCasa.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\ProjetoC.FormCliente.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.FormLimpeza.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\FormVenda.FormVendas.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Index.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Properties.Resources.resources
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.exe
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.pdb
+C:\Users\Utilizador\Desktop\ProjetoCSharp2018\Projeto\Projeto\obj\Debug\Projeto.Base_de_dados.Base_de_dados.Properties.Resources.resources

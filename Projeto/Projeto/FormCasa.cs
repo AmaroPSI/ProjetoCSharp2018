@@ -120,7 +120,7 @@ namespace Index
 
         private void button4_Click(object sender, EventArgs e)
         {
-            FormLimpezas interligar = new FormLimpezas();
+            FormLimpeza interligar = new FormLimpeza();
             interligar.ShowDialog();
         }
     }

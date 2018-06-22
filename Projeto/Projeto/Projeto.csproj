@@ -46,6 +46,51 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrendamento.cs" />
+    <Compile Include="Base de dados\Base de dados\Form1.cs" />
+    <Compile Include="Base de dados\Base de dados\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base de dados\Base de dados\Model1.Context.cs" />
+    <Compile Include="Base de dados\Base de dados\Model1.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base de dados\Base de dados\Model1.Designer.cs" />
+    <Compile Include="Base de dados\Base de dados\Model11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Base de dados\Base de dados\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Base de dados\Base de dados\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Base de dados\Base de dados\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Base de dados\Base de dados\Program.cs" />
+    <Compile Include="Base de dados\Base de dados\Properties\AssemblyInfo.cs" />
+    <Compile Include="Base de dados\Base de dados\Properties\Resources.Designer.cs" />
+    <Compile Include="Base de dados\Base de dados\Properties\Settings.Designer.cs" />
+    <Compile Include="Base de dados\DbContext.cs" />
+    <Compile Include="Base de dados\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base de dados\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base de dados\Model1.Context.cs" />
+    <Compile Include="Base de dados\Model1.Context1.cs" />
+    <Compile Include="Base de dados\Model1.Context2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base de dados\Model1.Designer.cs" />
+    <Compile Include="Base de dados\Model11.Designer.cs" />
+    <Compile Include="Base de dados\Model12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Base de dados\Program.cs" />
     <Compile Include="Casa.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="FormArrendamentos.cs">
@@ -83,6 +128,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base de dados\Base de dados\obj\Debug\Base_de_dados.Properties.Resources.resources" />
+    <EmbeddedResource Include="Base de dados\Base de dados\Properties\Resources.resx" />
     <EmbeddedResource Include="FormArrendamentos.resx">
       <DependentUpon>FormArrendamentos.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +158,34 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Base de dados\.vs\Base de dados\v15\.suo" />
+    <None Include="Base de dados\Base de dados\App.config" />
+    <None Include="Base de dados\Base de dados\bin\Debug\Base de dados.exe.config" />
+    <EntityDeploy Include="Base de dados\Base de dados\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model11.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Base de dados\Base de dados\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="Base de dados\Base de dados\obj\Debug\Base de dados.csproj.GenerateResource.Cache" />
+    <None Include="Base de dados\Base de dados\obj\Debug\Base de dados.csprojResolveAssemblyReference.cache" />
+    <None Include="Base de dados\Base de dados\obj\Debug\CoreCompileInputs.cache" />
+    <None Include="Base de dados\Base de dados\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Base de dados\Base de dados\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Base de dados\Base de dados\obj\Debug\edmxResourcesToEmbed\Model1.csdl" />
+    <None Include="Base de dados\Base de dados\obj\Debug\edmxResourcesToEmbed\Model1.msl" />
+    <None Include="Base de dados\Base de dados\obj\Debug\edmxResourcesToEmbed\Model1.ssdl" />
+    <None Include="Base de dados\Base de dados\Properties\Settings.settings" />
+    <EntityDeploy Include="Base de dados\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model12.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Base de dados\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="Base de dados\packages\EntityFramework.6.1.3\Content\App.config.transform" />
+    <None Include="Base de dados\packages\EntityFramework.6.1.3\Content\Web.config.transform" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +200,36 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Base de dados\Base de dados.sln" />
+    <Content Include="Base de dados\Base de dados\Base de dados.csproj" />
+    <Content Include="Base de dados\Base de dados\bin\Debug\Base de dados.exe" />
+    <Content Include="Base de dados\Base de dados\bin\Debug\Base de dados.pdb" />
+    <Content Include="Base de dados\Base de dados\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Base de dados\Base de dados\Model1.edmx.sql" />
+    <Content Include="Base de dados\Base de dados\obj\Debug\Base de dados.csproj.FileListAbsolute.txt" />
+    <Content Include="Base de dados\Base de dados\obj\Debug\Base de dados.exe" />
+    <Content Include="Base de dados\Base de dados\obj\Debug\Base de dados.pdb" />
+    <Content Include="Base de dados\Base de dados\obj\Debug\TempPE\Model1.Context.cs.dll" />
+    <Content Include="Base de dados\Base de dados\obj\Debug\TempPE\Model1.Designer.cs.dll" />
+    <Content Include="Base de dados\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context2.cs</LastGenOutput>
+    </Content>
+    <Content Include="Base de dados\Model1.edmx.sql" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.xml" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.xml" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.xml" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.xml" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\tools\about_EntityFramework.help.txt" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="Base de dados\packages\EntityFramework.6.1.3\tools\EntityFramework.PowerShell.Utility.dll" />
     <Content Include="img\687474703a2f2f692e696d6775722e636f6d2f48656c687441782e706e67.ico" />
     <Content Include="img\687474703a2f2f692e696d6775722e636f6d2f48656c687441782e706e67.png" />
     <Content Include="img\Cash-icon.ico" />
@@ -146,6 +251,9 @@
     <Folder Include="packages\EntityFramework.6.2.0\lib\net40\" />
     <Folder Include="packages\EntityFramework.6.2.0\lib\net45\" />
     <Folder Include="packages\EntityFramework.6.2.0\tools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
