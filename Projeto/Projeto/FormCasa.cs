@@ -137,5 +137,10 @@ namespace Index
         {
             this.dataGridView1.Rows.Remove(this.dataGridView1.CurrentRow);
         }
+
+        private void tbid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

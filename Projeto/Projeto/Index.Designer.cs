@@ -29,68 +29,68 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pbclientes = new System.Windows.Forms.PictureBox();
+            this.pbcasa = new System.Windows.Forms.PictureBox();
+            this.img = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbclientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcasa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pbclientes
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(78, 214);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(181, 172);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pbclientes.Image = ((System.Drawing.Image)(resources.GetObject("pbclientes.Image")));
+            this.pbclientes.Location = new System.Drawing.Point(78, 214);
+            this.pbclientes.Name = "pbclientes";
+            this.pbclientes.Size = new System.Drawing.Size(181, 172);
+            this.pbclientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbclientes.TabIndex = 0;
+            this.pbclientes.TabStop = false;
+            this.pbclientes.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // pbcasa
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(454, 214);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(181, 172);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pbcasa.Image = ((System.Drawing.Image)(resources.GetObject("pbcasa.Image")));
+            this.pbcasa.Location = new System.Drawing.Point(454, 214);
+            this.pbcasa.Name = "pbcasa";
+            this.pbcasa.Size = new System.Drawing.Size(181, 172);
+            this.pbcasa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbcasa.TabIndex = 1;
+            this.pbcasa.TabStop = false;
+            this.pbcasa.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
+            // img
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(269, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(181, 172);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.img.Image = ((System.Drawing.Image)(resources.GetObject("img.Image")));
+            this.img.Location = new System.Drawing.Point(269, 12);
+            this.img.Name = "img";
+            this.img.Size = new System.Drawing.Size(181, 172);
+            this.img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img.TabIndex = 2;
+            this.img.TabStop = false;
             // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(722, 453);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.img);
+            this.Controls.Add(this.pbcasa);
+            this.Controls.Add(this.pbclientes);
             this.Name = "Index";
             this.Text = "Página Principal";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbclientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcasa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbclientes;
+        private System.Windows.Forms.PictureBox pbcasa;
+        private System.Windows.Forms.PictureBox img;
     }
 }
 

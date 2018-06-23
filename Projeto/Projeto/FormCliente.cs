@@ -18,6 +18,10 @@ namespace ProjetoC
         public FormCliente()
         {
             InitializeComponent();
+            datagridclientes.ColumnCount = 3;
+            datagridclientes.Columns[0].Name = "Nome";
+            datagridclientes.Columns[1].Name = "NIF";
+            datagridclientes.Columns[2].Name = "Contacto";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -92,7 +96,13 @@ namespace ProjetoC
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-             this.datagridclientes.Rows.Add(tbnome.Text, Convert.ToDouble(tbnif.Text), Convert.ToDouble(tbcontacto.Text));
+            this.datagridclientes.Rows.Add(tbnome.Text, tbnif.Text, tbcontacto.Text);
+            addData(tbnome.Text, tbnif.Text, tbcontacto.Text); ;
+        }
+        private void addData(string Nome, string NIF, string Contacto)
+        {
+            String[] row = { Nome, NIF, Contacto };
+            datagridclientes.Rows.Add(row);
         }
 
         private void datagridclientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -111,6 +121,13 @@ namespace ProjetoC
             datagridclientes.Sort(datagridclientes.Columns[1], ListSortDirection.Ascending);
             datagridclientes.Sort(datagridclientes.Columns[2], ListSortDirection.Ascending);
             
+        }
+
+        private void btnapagar_Click(object sender, EventArgs e)
+        {
+           
+        this.datagridclientes.Rows.Remove(this.datagridclientes.CurrentRow);
+           
         }
     }
 }

@@ -25,18 +25,6 @@ namespace ProjetoC
             this.nif = nif;
             this.contacto = contacto;
         }
-        public Cliente(String nome)
-        {
-            this.nome = nome;
-            this.nif = 0;
-            this.contacto = 0;
-        }
-        public Cliente(int nif)
-        {
-            this.nome = "";
-            this.nif = nif;
-            this.contacto = 0;
-        }
        
 
         public String Nome { get => nome; set => nome = value; }

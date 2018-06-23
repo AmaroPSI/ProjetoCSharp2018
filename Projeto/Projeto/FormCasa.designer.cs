@@ -70,11 +70,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_nova = new System.Windows.Forms.Button();
             this.btn_venda = new System.Windows.Forms.Button();
             this.btn_arrendamento = new System.Windows.Forms.Button();
             this.btn_gerirlimpezas = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_guardar = new System.Windows.Forms.Button();
             this.tbid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -434,15 +434,15 @@
             this.label10.TabIndex = 47;
             this.label10.Text = "€";
             // 
-            // button1
+            // btn_nova
             // 
-            this.button1.Location = new System.Drawing.Point(771, 581);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Nova";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_nova.Location = new System.Drawing.Point(771, 581);
+            this.btn_nova.Name = "btn_nova";
+            this.btn_nova.Size = new System.Drawing.Size(75, 23);
+            this.btn_nova.TabIndex = 48;
+            this.btn_nova.Text = "Nova";
+            this.btn_nova.UseVisualStyleBackColor = true;
+            this.btn_nova.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_venda
             // 
@@ -474,15 +474,15 @@
             this.btn_gerirlimpezas.UseVisualStyleBackColor = true;
             this.btn_gerirlimpezas.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btn_guardar
             // 
-            this.button5.Location = new System.Drawing.Point(536, 581);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 52;
-            this.button5.Text = "Guardar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_guardar.Location = new System.Drawing.Point(536, 581);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(75, 23);
+            this.btn_guardar.TabIndex = 52;
+            this.btn_guardar.Text = "Guardar";
+            this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.button5_Click);
             // 
             // tbid
             // 
@@ -490,6 +490,7 @@
             this.tbid.Name = "tbid";
             this.tbid.Size = new System.Drawing.Size(100, 20);
             this.tbid.TabIndex = 53;
+            this.tbid.TextChanged += new System.EventHandler(this.tbid_TextChanged);
             // 
             // FormCasa
             // 
@@ -497,11 +498,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 640);
             this.Controls.Add(this.tbid);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.btn_gerirlimpezas);
             this.Controls.Add(this.btn_arrendamento);
             this.Controls.Add(this.btn_venda);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_nova);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -600,11 +601,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_nova;
         private System.Windows.Forms.Button btn_venda;
         private System.Windows.Forms.Button btn_arrendamento;
         private System.Windows.Forms.Button btn_gerirlimpezas;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.TextBox tbid;
     }
 }

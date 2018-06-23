@@ -53,11 +53,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnapagar = new System.Windows.Forms.Button();
             this.datagridclientes = new System.Windows.Forms.DataGridView();
-            this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NIF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridclientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
@@ -276,6 +276,7 @@
             this.btnapagar.TabIndex = 23;
             this.btnapagar.Text = "Apagar";
             this.btnapagar.UseVisualStyleBackColor = true;
+            this.btnapagar.Click += new System.EventHandler(this.btnapagar_Click);
             // 
             // datagridclientes
             // 
@@ -292,16 +293,6 @@
             this.datagridclientes.TabIndex = 24;
             this.datagridclientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridclientes_CellContentClick);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(376, 100);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(294, 525);
-            this.groupBox1.TabIndex = 25;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Detalhes";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // Nome
             // 
             this.Nome.HeaderText = "Nome";
@@ -316,6 +307,16 @@
             // 
             this.Contacto.HeaderText = "Contacto";
             this.Contacto.Name = "Contacto";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(376, 100);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(294, 525);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Detalhes";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // FormCliente
             // 
